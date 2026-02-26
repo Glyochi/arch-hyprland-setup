@@ -92,11 +92,11 @@
   },
 
   "clock": {
-    "format": "   {:%H:%M}",
+    "format": "  {:%H:%M}",
 
     "tooltip": false,
 
-    "locale": "pl_PL.UTF-8"
+    "locale": "en_US.utf8"
   },
 
   "clock#date": {
