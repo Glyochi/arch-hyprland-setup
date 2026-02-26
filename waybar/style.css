@@ -1,11 +1,11 @@
 /* Importuj kolory wygenerowane przez Pywal */
-@import url("/home/gly/.cache/wal/colors-waybar.css");
+@import url("/home/gly/.config/waybar/colors-waybar.css");
 
 /* --- Style ogólne --- */
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrains Mono", "Noto Sans Symbols2", sans-serif;
+    font-family: "JetBrains Mono", "Symbols Nerd Font", sans-serif;
     font-size: 15px;
     min-height: 0;
 }

@@ -56,7 +56,7 @@
   },
 
   "cpu": {
-    "format": "  {usage} %",
+    "format": "   {usage} %",
 
     "tooltip": true,
 
@@ -75,7 +75,7 @@
   "custom/sep_left_alt": { "format": "<span>|</span> ", "tooltip": false }, // Możesz użyć innych separatorów
 
   "hyprland/workspaces": {
-    "format": "  {id}", // Wyświetla numer przestrzeni roboczej (1, 2, 3, itd.)
+    "format": "   {id}", // Wyświetla numer przestrzeni roboczej (1, 2, 3, itd.)
 
     "persistent_workspaces": {
       "DP-1": [1, 4],
@@ -92,7 +92,7 @@
   },
 
   "clock": {
-    "format": "  {:%H:%M}",
+    "format": "   {:%H:%M}",
 
     "tooltip": false,
 
@@ -100,7 +100,7 @@
   },
 
   "clock#date": {
-    "format": "  {:L%a, %d %b}",
+    "format": "   {:L%a, %d %b}",
     "locale": "pl_PL.UTF-8",
     "tooltip": true,
     "tooltip-format": "<tt>{calendar}</tt>",
@@ -115,7 +115,7 @@
   },
 
   "pulseaudio": {
-    "format": "{icon}  {volume}%",
+    "format": "{icon}   {volume}%",
 
     "format-muted": "󰝟 Wyciszono",
 
