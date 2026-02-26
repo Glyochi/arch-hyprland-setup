@@ -5,25 +5,36 @@ set -Eeuo pipefail
 CURRENT_DIR="$(pwd)"
 
 SOURCE_ROOT_DIR="${CURRENT_DIR}"
-TARGET_ROOT_DIR="${HOME}/.config/hypr"
+TARGET_CONFIG_DIR="${HOME}/.config"
 
-# Check if hyprland.conf has already exists. If not then symbolic link it.
-source_path="${SOURCE_ROOT_DIR}/hyprland.conf"
-target_path="${TARGET_ROOT_DIR}/hyprland.conf"	
-if [[ -f "${target_path}" ]]; then
-	prompt_message="Hyprland config at '${target_path}' already exists. Do you want to replace it?\n" 
-	print_warning "$prompt_message"
-	tmp_array=("No" "Yes")
+configure_directory_symlink() {
+	local source_path="$1"
+	local target_path="$2"
+	local config_name="$3"
 
-	MENU ${tmp_array[@]}
-	response="${RETURN_0}"
+	if [[ -e "${target_path}" || -L "${target_path}" ]]; then
+		prompt_message="${config_name} at '${target_path}' already exists. Do you want to replace it?\n"
+		print_warning "$prompt_message"
+		tmp_array=("No" "Yes")
 
-	clear_previous_string "$prompt_message"
+		MENU ${tmp_array[@]}
+		response="${RETURN_0}"
 
-	if [[ "$response" = "No" ]]; then
-		print_warning "Configuring hyprland.conf aborted.\n"
-		exit
+		clear_previous_string "$prompt_message"
+
+		if [[ "$response" = "No" ]]; then
+			print_warning "Configuring ${config_name} aborted.\n"
+			exit
+		fi
+
+		rm -rf "${target_path}"
 	fi
-fi
 
-ln -fs "${source_path}" "${target_path}"
+	ln -s "${source_path}" "${target_path}"
+}
+
+mkdir -p "${TARGET_CONFIG_DIR}"
+
+configure_directory_symlink "${SOURCE_ROOT_DIR}/hypr" "${TARGET_CONFIG_DIR}/hypr" "Hypr config folder"
+configure_directory_symlink "${SOURCE_ROOT_DIR}/waybar" "${TARGET_CONFIG_DIR}/waybar" "Waybar config folder"
+configure_directory_symlink "${SOURCE_ROOT_DIR}/.cache" "${HOME}/.cache" "Waybar config folder"

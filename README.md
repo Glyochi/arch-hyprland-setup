@@ -1,9 +1,16 @@
+# Setup
+1. Run `install_things.sh` from this repository root.
+2. The script creates these symlinks (with replace confirmation prompts):
+   - `~/.config/hypr` -> `<repo>/hypr`
+   - `~/.config/waybar` -> `<repo>/waybar`
+
+
 # Edit ~/.config/hypr/hyprland.conf
 1. Turn on natural scroll in `input.touchpad.natural_scroll`
 2. Add custom bindings
-    ```
-    bind = $mainMod, F, fullscreen, 0
-    ```
+   ```
+   bind = $mainMod, F, fullscreen, 0
+   ```
 3. Change monitor scale to 1.67
 
 
@@ -31,6 +38,4 @@
 
 
 # Other customizations
-1. Install waybar
-2. Navigate to `/etc/makepkg.conf` and edit `MAKEFLAGS="-j{threads on device}"`. For my laptop its 2 threads/core, 6 cores => 12 threads
-
+1. Navigate to `/etc/makepkg.conf` and edit `MAKEFLAGS="-j{threads on device}"`. For my laptop its 2 threads/core, 6 cores => 12 threads
