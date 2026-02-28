@@ -3,6 +3,15 @@
 2. The script creates these symlinks (with replace confirmation prompts):
    - `~/.config/hypr` -> `<repo>/hypr`
    - `~/.config/waybar` -> `<repo>/waybar`
+3. Set up audio for hdmi if does not show up in `wpctl status`
+    - [Follow this guide](https://askubuntu.com/questions/1256043/no-sound-on-hdmi-ubuntu-20-04)
+    - `aplay -l` to get list of hardware playback devices
+    - `speaker-test --channels 2 --test wav --device hw:[card],[device]` to go through each device and see which one maps to external speaker
+    - `pactl load-module module-alsa-sink device=hw:[card],[device]` to have this device show up in `wpctl status` 
+    - `wpctl set-default {sinks id}`
+    - You could also make a service on startup (~/.config/systemd/user) and that all these
+
+
 
 
 # Edit ~/.config/hypr/hyprland.conf
