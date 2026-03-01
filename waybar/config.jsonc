@@ -123,6 +123,8 @@
       "default": ["", "", ""]
     },
 
+    "on-click": "pavucontrol",
+
     "on-click-middle": "pamixer --toggle-mute",
 
     "on-scroll-up": "pamixer --increase 2",
