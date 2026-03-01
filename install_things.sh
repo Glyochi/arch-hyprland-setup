@@ -37,4 +37,5 @@ mkdir -p "${TARGET_CONFIG_DIR}"
 
 configure_directory_symlink "${SOURCE_ROOT_DIR}/hypr" "${TARGET_CONFIG_DIR}/hypr" "Hypr config folder"
 configure_directory_symlink "${SOURCE_ROOT_DIR}/waybar" "${TARGET_CONFIG_DIR}/waybar" "Waybar config folder"
+configure_directory_symlink "${SOURCE_ROOT_DIR}/images" "${TARGET_CONFIG_DIR}/images" "Waybar config folder"
 configure_directory_symlink "${SOURCE_ROOT_DIR}/.cache" "${HOME}/.cache" "Waybar config folder"
