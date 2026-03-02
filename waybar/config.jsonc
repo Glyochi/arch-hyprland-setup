@@ -4,9 +4,9 @@
   "exclusive": true,
   "height": 43,
   "spacing": 4,
-  "margin-left": 20,
+  "margin-left": 10,
   "margin-top": 0,
-  "margin-right": 20,
+  "margin-right": 10,
 
   // === LEWA STRONA ===
   "modules-left": [
