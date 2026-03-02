@@ -101,12 +101,12 @@
 
   "clock#date": {
     "format": "   {:L%a, %d %b}",
-    "locale": "pl_PL.UTF-8",
+    "locale": "en_US.utf8",
     "tooltip": true,
     "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "mode": "month",
-      "locale": "pl_PL.UTF-8",
+      "locale": "en_US.utf8",
       "first-weekday": 1,
       "on-scroll-up": "shift_down",
       "on-scroll-down": "shift_up"
