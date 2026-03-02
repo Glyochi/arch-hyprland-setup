@@ -12,7 +12,7 @@
 
 /* --- Główny pasek --- */
 window#waybar {
-    background-color: alpha(@background, 0.85);
+    background-color: alpha(@background, 0.5);
     color: @foreground;
     border-radius: 11px;
     border: 2px solid alpha(@color4, 0.3);
@@ -117,6 +117,17 @@ window#waybar {
     margin-top: 6px;
     margin-bottom: 6px;
     margin-left: 4px;
+}
+
+tooltip {
+    background: @background;
+    color: @foreground;
+    border: 1px solid alpha(@color8, 0.6);
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: @foreground;
 }
 
 /* Zbędne separatory, można je ukryć */
