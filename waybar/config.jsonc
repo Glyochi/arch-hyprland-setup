@@ -28,7 +28,7 @@
     "pulseaudio",
     "network",
     "custom/sep_right_alt",
-    // "custom/power",
+    "custom/power",
     "custom/sep_right_alt"
   ],
 
@@ -140,16 +140,15 @@
     "icon-size": 20,
 
     "spacing": 8
+  },
+
+  "custom/power": {
+    // Twoje menu zasilania
+
+    "format": "󰐥", // Ikona Power z Nerd Fonts
+
+    "tooltip": false,
+
+    "on-click": "hyprlock"
   }
-
-  // "custom/power": {
-  //   // Twoje menu zasilania
-
-  //   "format": "󰐥", // Ikona Power z Nerd Fonts
-
-  //   "tooltip": false,
-
-  //   "on-click": "~/.config/waybar/scripts/power_action.sh lock",
-  //   "on-click-right": "~/.config/waybar/scripts/power_action.sh suspend"
-  // }
 }
