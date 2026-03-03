@@ -26,6 +26,7 @@ window#waybar {
 #network,
 #memory,
 #cpu,
+#custom-gpu,
 #temperature,
 #tray,
 #custom-power,
@@ -96,7 +97,7 @@ window#waybar {
     padding-right: 15px;
 }
 
-#clock, #clock-date, #memory, #cpu { 
+#clock, #clock-date, #memory, #cpu, #custom-gpu { 
 	color: @foreground; 
 }
 

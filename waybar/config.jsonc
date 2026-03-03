@@ -24,6 +24,7 @@
   "modules-right": [
     "tray",
     "cpu",
+    "custom/gpu",
     "memory",
     "pulseaudio",
     "network",
@@ -60,6 +61,14 @@
 
     "tooltip": true,
 
+    "interval": 5
+  },
+
+  "custom/gpu": {
+    "format": "󰢮   {}",
+    "return-type": "json",
+    "exec": "~/.config/waybar/scripts/gpu_usage.sh",
+    "tooltip": true,
     "interval": 5
   },
 
