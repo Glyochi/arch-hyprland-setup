@@ -133,11 +133,11 @@
 
     "on-click": "pavucontrol",
 
-    "on-click-middle": "pamixer --toggle-mute",
+    "on-click-middle": "swayosd-client --output-volume mute-toggle",
 
-    "on-scroll-up": "pamixer --increase 2",
+    "on-scroll-up": "swayosd-client --output-volume +2 --max-volume 120",
 
-    "on-scroll-down": "pamixer --decrease 2"
+    "on-scroll-down": "swayosd-client --output-volume -2 --max-volume 120"
   },
 
   "custom/sep_right": { "format": " <span>|</span> ", "tooltip": false },

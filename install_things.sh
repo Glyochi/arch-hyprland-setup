@@ -37,5 +37,6 @@ mkdir -p "${TARGET_CONFIG_DIR}"
 
 configure_directory_symlink "${SOURCE_ROOT_DIR}/hypr" "${TARGET_CONFIG_DIR}/hypr" "Hypr config folder"
 configure_directory_symlink "${SOURCE_ROOT_DIR}/waybar" "${TARGET_CONFIG_DIR}/waybar" "Waybar config folder"
+configure_directory_symlink "${SOURCE_ROOT_DIR}/swayosd" "${TARGET_CONFIG_DIR}/swayosd" "SwayOSD config folder"
 configure_directory_symlink "${SOURCE_ROOT_DIR}/kitty" "${TARGET_CONFIG_DIR}/kitty" "Kitty config folder"
 configure_directory_symlink "${SOURCE_ROOT_DIR}/images" "${TARGET_CONFIG_DIR}/images" "Waybar config folder"

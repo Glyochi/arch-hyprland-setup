@@ -4,6 +4,7 @@
 2. Install
     - `waybar`
     - `hyprlock`
+    - `swayosd`
 3. Set up audio for hdmi if does not show up in `wpctl status`
     - [Follow this guide](https://askubuntu.com/questions/1256043/no-sound-on-hdmi-ubuntu-20-04)
     - `aplay -l` to get list of hardware playback devices
