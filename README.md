@@ -3,6 +3,7 @@
     - The script creates symlinks to config folders (with replace confirmation prompts):
 2. Install
     - `waybar`
+    - `hyprpaper`
     - `hyprlock`
     - `swayosd`
 3. Set up audio for hdmi if does not show up in `wpctl status`
