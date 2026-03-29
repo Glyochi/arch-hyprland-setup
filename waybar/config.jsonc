@@ -28,6 +28,7 @@
     "memory",
     "pulseaudio",
     "network",
+    "battery",
     "custom/power",
     "custom/sep_right_alt"
   ],
@@ -138,6 +139,21 @@
     "on-scroll-up": "swayosd-client --output-volume +2 --max-volume 120",
 
     "on-scroll-down": "swayosd-client --output-volume -2 --max-volume 120"
+  },
+
+  "battery": {
+    "format": "{icon}  {capacity}%",
+    "format-charging": "󰂄  {capacity}%",
+    "format-discharging": "{icon}  {capacity}%",
+    "format-full": "󰁹  {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "tooltip": true,
+    "interval": 15,
+    "states": {
+      "good": 95,
+      "warning": 25,
+      "critical": 10
+    },
   },
 
   "custom/sep_right": { "format": " <span>|</span> ", "tooltip": false },

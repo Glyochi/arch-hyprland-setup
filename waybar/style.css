@@ -25,6 +25,7 @@ window#waybar {
 #pulseaudio,
 #network,
 #memory,
+#battery,
 #cpu,
 #custom-gpu,
 #temperature,
