@@ -1,4 +1,6 @@
 # Setup
+0. Run `install_dependencies.sh` for dependencies and `install_shutdown_after_suspend_rts.sh` for laptop auto shutdown
+    - It put a script in `/etc/systemd` for systemd to handle timer after laptop went into suspended mode
 1. Run `install_things.sh` from this repository root.
     - The script creates symlinks to config folders (with replace confirmation prompts):
 2. Install
@@ -6,6 +8,7 @@
     - `hyprpaper`
     - `hyprlock`
     - `swayosd`
+    0 `hypridle`
 3. Set up audio for hdmi if does not show up in `wpctl status`
     - [Follow this guide](https://askubuntu.com/questions/1256043/no-sound-on-hdmi-ubuntu-20-04)
     - `aplay -l` to get list of hardware playback devices
